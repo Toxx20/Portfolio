@@ -9,28 +9,33 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-75hdni(me0oq2w!c5if184s!gg+)t$&*lo!y=_pvvn)58#9651'
-
+# Security
+SECRET_KEY = os.environ.get("SECRET_KEY", "dev-secret-for-local")
+DEBUG = os.environ.get("DEBUG", "True") == "True"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,15 +45,15 @@ INSTALLED_APPS = [
 
     # 3rd-party
     "rest_framework",
-    "corsheaders",
+   
     # local
     "core",
 ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware", 
-
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",            
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -58,6 +63,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'backend.urls'
+WSGI_APPLICATION = "backend.wsgi.application"
 
 TEMPLATES = [
     {
@@ -81,10 +87,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": dj_database_url.config(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+        conn_max_age=600,
+    )
 }
 
 
@@ -117,19 +123,22 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
+# Static files (WhiteNoise)
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+# si tu as un dossier 'static' pour dev, garde STATICFILES_DIRS
+STATICFILES_DIRS = [BASE_DIR / "static"] if (BASE_DIR / "static").exists() else []
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATIC_URL = 'static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# CORS : autorise le front Vite (port 5173)
+# CORS — ajoute ton domaine Vercel / domaine personnalisé
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://portfolio-mu-eight-m99gy6myce.vercel.app",  # URL Vercel actuelle
+    # "https://toxx.com",  # ajoute quand tu relié ton domaine
 ]
+
+# Sécurité pour reverse proxies (Render, Vercel, etc.)
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
