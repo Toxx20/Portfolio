@@ -1,0 +1,1 @@
+node_modules/\n.env\nvenv/\n__pycache__/\n*.pyc\n/dist\n/build\n
