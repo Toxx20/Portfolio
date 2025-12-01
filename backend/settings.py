@@ -28,7 +28,11 @@ DEBUG = os.environ.get("DEBUG", "True") == "True"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "portfolio-nod8.onrender.com",
+]
 
 
 
@@ -130,19 +134,12 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [BASE_DIR / "static"] if (BASE_DIR / "static").exists() else []
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "portfolio-nod8.onrender.com",
-]
-
 
 # CORS — ajoute ton domaine Vercel / domaine personnalisé
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://portfolio-mu-eight-m99gy6myce.vercel.app",  # URL Vercel actuelle
-    # "https://toxx.com",  # ajoute quand tu relié ton domaine
 ]
 
 # Sécurité pour reverse proxies (Render, Vercel, etc.)
