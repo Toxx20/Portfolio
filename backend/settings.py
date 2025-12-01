@@ -130,6 +130,13 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [BASE_DIR / "static"] if (BASE_DIR / "static").exists() else []
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "portfolio-nod8.onrender.com",
+]
+
+
 # CORS — ajoute ton domaine Vercel / domaine personnalisé
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
