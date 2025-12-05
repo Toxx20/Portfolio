@@ -1,6 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import ThemeWrapper from "../components/ThemeWrapper";
 import myPhoto from "../assets/acc_cropped.jpg";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -54,8 +55,8 @@ export default function Home() {
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
               {/* Bouton Projets */}
-              <a
-                href="/projets"
+              <Link
+                to="/projets"
                 className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center gap-2 shadow-lg"
               >
                 {/* Icône Folder */}
@@ -72,11 +73,11 @@ export default function Home() {
                   <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6l2 2h8a2 2 0 0 1 2 2Z" />
                 </svg>
                 Voir mes projets
-              </a>
+              </Link>
 
               {/* Bouton Contact */}
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="px-6 py-3 border border-blue-500 text-blue-300 rounded-lg hover:bg-blue-600 hover:text-white transition flex items-center gap-2 shadow-lg"
               >
                 {/* Icône Mail */}
@@ -94,7 +95,7 @@ export default function Home() {
                   <polyline points="3 7 12 13 21 7" />
                 </svg>
                 Contact
-              </a>
+              </Link>
 
               {/* Bouton Télécharger CV */}
               <a
