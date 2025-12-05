@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "portfolio-nod8.onrender.com",
+    "portfolio-mu-eight-m99gy6myce.vercel.app",
 ]
 
 
