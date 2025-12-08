@@ -116,39 +116,54 @@ export default function About() {
               </div>
             </div>
           </div>
-
           {/* EDUCATION - below experiences */}
           <div>
             <h2 id="education" className="text-2xl font-bold text-blue-400 mb-6 scroll-mt-32">
               Éducation
             </h2>
 
-            <div className="space-y-6">
-              <div className="bg-gray-800/50 p-6 rounded-2xl">
-                <h4 className="font-semibold text-white">ESMIA (Mahamasina)</h4>
-                <div className="text-gray-300 text-sm mt-2">
-                  Master 2 — Informatique Appliquée à la Gestion d’Entreprise (2025) <br />
-                  Licence — Informatique Risque et Décision (2023)
+            {/* 2 colonnes : texte à gauche, photo à droite */}
+            <div className="grid md:grid-cols-2 gap-10 items-start">
+
+              {/* --- COLONNE GAUCHE : ÉDUCATION --- */}
+              <div className="space-y-6">
+                <div className="bg-gray-800/50 p-6 rounded-2xl">
+                  <h4 className="font-semibold text-white">ESMIA (Mahamasina)</h4>
+                  <div className="text-gray-300 text-sm mt-2">
+                    Master 2 — Informatique Appliquée à la Gestion d’Entreprise (2025) <br />
+                    Licence — Informatique Risque et Décision (2023)
+                  </div>
+                </div>
+
+                <div className="bg-gray-800/50 p-6 rounded-2xl">
+                  <h4 className="font-semibold text-white">Alliance Française (Andavamamba)</h4>
+                  <div className="text-gray-300 text-sm mt-2">Diplôme B1 (2021)</div>
+                </div>
+
+                <div className="bg-gray-800/50 p-6 rounded-2xl">
+                  <h4 className="font-semibold text-white">Lycée Privé Imahatsara (Ampitatafika)</h4>
+                  <div className="text-gray-300 text-sm mt-2">Baccalauréat A2 (2020)</div>
+                </div>
+
+                <div className="bg-gray-800/50 p-6 rounded-2xl">
+                  <h4 className="font-semibold text-white">Auto-école ROSA (Ampitatafika)</h4>
+                  <div className="text-gray-300 text-sm mt-2">Permis A &amp; B</div>
                 </div>
               </div>
 
-              <div className="bg-gray-800/50 p-6 rounded-2xl">
-                <h4 className="font-semibold text-white">Alliance Française (Andavamamba)</h4>
-                <div className="text-gray-300 text-sm mt-2">Diplôme B1 (2021)</div>
+              {/* --- COLONNE DROITE : PHOTO --- */}
+              <div className="flex justify-center">
+                <img
+                  src="/education.jpg"
+                  alt="Photo diplôme"
+                  className="rounded-2xl shadow-xl object-cover w-full md:w-80"
+                />
               </div>
 
-              <div className="bg-gray-800/50 p-6 rounded-2xl">
-                <h4 className="font-semibold text-white">Lycée Privé Imahatsara (Ampitatafika)</h4>
-                <div className="text-gray-300 text-sm mt-2">Baccalauréat A2 (2020)</div>
-              </div>
-
-              <div className="bg-gray-800/50 p-6 rounded-2xl">
-                <h4 className="font-semibold text-white">Auto-école ROSA (Ampitatafika)</h4>
-                <div className="text-gray-300 text-sm mt-2">Permis A &amp; B</div>
-              </div>
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Bouton flottant CV */}
