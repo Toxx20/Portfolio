@@ -3,12 +3,7 @@ import { useEffect } from "react";
 import ThemeWrapper from "../components/ThemeWrapper";
 import { useLocation } from "react-router-dom";
 
-/**
- * About page — timeline + education
- * - Expériences en premier (plein largeur)
- * - Éducation ensuite
- * - Pas de section "Compétences" ni "Formations & Certifications"
- */
+
 
 export default function About() {
   const location = useLocation();
@@ -71,13 +66,9 @@ export default function About() {
       <section className="container py-16">
         <div className="max-w-5xl mx-auto">
           <header className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white">
               À propos de moi
-            </h1>
-            <p className="text-gray-400 max-w-2xl mx-auto mt-3">
-              Développeur Full-Stack & Mobile — je conçois des applications robustes et maintenables,
-              en combinant backend solide, interfaces réactives et pipelines data/IA quand nécessaire.
-            </p>
+            </h2>
           </header>
 
           {/* EXPERIENCES - full width, first */}
