@@ -67,7 +67,7 @@ export default function Navbar() {
 
           <div className="hidden sm:block">
             <div className="font-extrabold text-white leading-none">Toky R.</div>
-            <div className="text-xs text-gray-400">Full-Stack</div>
+            <div className="text-xs text-gray-400">Backend</div>
           </div>
         </Link>
 

@@ -77,165 +77,106 @@ export default function Specialisation() {
               Mes Spécialisations
             </h1>
             <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Stack complet — Frontend, Backend, Frameworks, Data / IA et outils DevOps. 
+              Développeur Backend Django avec expertise en développement Full-Stack.
               <br className="hidden md:block" />
-              <span className="text-blue-300 font-semibold">Construit pour la production, optimisé pour la maintenabilité.</span>
+              <span className="text-blue-300 font-semibold">Du backend robuste aux interfaces Bootstrap élégantes, prêt pour la production.</span>
             </p>
           </header>
 
-          {/* Backend + Frontend Grid */}
-          <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Backend */}
-            <div className="space-y-6">
-              <SectionHeader 
-                title="Backend" 
-                subtitle="APIs robustes, microservices, architecture scalable"
-              />
+          {/* Langage de Programmation */}
+          <section className="mb-16">
+            <SectionHeader 
+              title="Langage de Programmation" 
+              subtitle="Maîtrise de base de Python pour le développement web et l'automatisation"
+            />
 
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                title="Java"
-                badge="JDK 17 LTS"
-                desc="Applications d'entreprise, microservices, Spring Boot, sécurité et performance pour production haute disponibilité."
-                href="https://spring.io/projects/spring-boot"
-              />
-
+            <div className="grid grid-cols-1 max-w-2xl mx-auto">
               <TechCard
                 logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                 title="Python"
                 badge="Python 3.10+"
-                desc="APIs REST/GraphQL, scripts automation, data pipelines. Frameworks Django/FastAPI pour développement rapide et productif."
-                href="https://www.djangoproject.com/"
-              />
-            </div>
-
-            {/* Frontend */}
-            <div className="space-y-6">
-              <SectionHeader 
-                title="Frontend & UI" 
-                subtitle="Interfaces modernes, réactives et accessibles"
-              />
-
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                title="React"
-                badge="React 18+"
-                desc="SPAs performantes, composants réutilisables, hooks avancés, React Router, SSR/SSG avec Next.js pour une expérience utilisateur optimale."
-                href="https://react.dev/"
-              />
-
-              <TechCard
-                logo="https://www.svgrepo.com/show/374118/tailwind.svg"
-                title="Tailwind CSS"
-                badge="Utility-first"
-                desc="Design system moderne et cohérent, responsive design, dark mode natif. Développement rapide avec composants réutilisables."
-                href="https://tailwindcss.com/"
+                desc="Développement backend robuste, scripts d'automatisation, traitement de données."
+                href="https://www.python.org/"
               />
             </div>
           </section>
 
-          {/* Frameworks & Architecture */}
+          {/* Framework Backend */}
           <section className="mb-16">
             <SectionHeader 
-              title="Frameworks & Architecture" 
-              subtitle="Patterns MVC/MVT, REST APIs, authentification sécurisée"
+              title="Framework Backend" 
+              subtitle="Architecture MVT,sécurité intégrée"
+            />
+
+            <div className="grid grid-cols-1 max-w-2xl mx-auto">
+              <TechCard
+                logo="https://www.svgrepo.com/show/353657/django-icon.svg"
+                title="Django"
+                badge="Framework Full-Stack"
+                desc="Framework Python complet pour applications web robustes. Django REST Framework pour APIs RESTful professionnelles."
+                href="https://www.djangoproject.com/"
+              />
+            </div>
+          </section>
+
+          {/* Frontend */}
+          <section className="mb-16">
+            <SectionHeader 
+              title="Frontend" 
+              subtitle="Interfaces responsives avec Bootstrap"
+            />
+
+            <div className="grid grid-cols-1 max-w-2xl mx-auto">
+              <TechCard
+                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                title="Bootstrap"
+                badge="Bootstrap 5"
+                desc="Création d'interfaces utilisateur responsives et accessibles. Intégration fluide avec les templates Django pour un développement rapide et cohérent."
+                href="https://getbootstrap.com/"
+              />
+            </div>
+          </section>
+
+          {/* Base de Données */}
+          <section className="mb-16">
+            <SectionHeader 
+              title="Base de Données" 
+              subtitle="Gestion relationnelle robuste et performante"
+            />
+
+            <div className="grid grid-cols-1 max-w-2xl mx-auto">
+              <TechCard
+                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                title="MySQL"
+                badge="SGBD Relationnel"
+                desc="Base de données relationnelle fiable pour applications web."
+                href="https://www.mysql.com/"
+              />
+            </div>
+          </section>
+
+          {/* Web Scraping */}
+          <section className="mb-8">
+            <SectionHeader 
+              title="Web Scraping & Extraction de Données" 
+              subtitle="Collecte et traitement automatisé de données web"
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <TechCard
-                logo="https://www.svgrepo.com/show/353657/django-icon.svg"
-                title="Django"
-                badge="MVT Pattern"
-                desc="Framework full-stack Python — ORM puissant, interface admin, sécurité intégrée, Django REST Framework pour APIs robustes."
-                href="https://www.djangoproject.com/"
-              />
-
-              <TechCard
-                logo="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
-                title="Spring Boot"
-                badge="Java Enterprise"
-                desc="Microservices cloud-native, Spring Security pour authentification, Spring Data JPA, monitoring et déploiement kubernetes-ready."
-                href="https://spring.io/projects/spring-boot"
-              />
-            </div>
-          </section>
-
-          {/* IA & ML */}
-          <section className="mb-16">
-            <SectionHeader 
-              title="IA, NLP & Vision" 
-              subtitle="Computer Vision • Natural Language Processing • Machine Learning"
-            />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <TechCard
-                logo={null}
-                title="YOLOv8"
-                badge="Ultralytics"
-                desc="Détection et segmentation d'objets temps réel. Déploiement edge/cloud, inférence optimisée GPU/CPU."
-                href="https://docs.ultralytics.com/models/yolov8/"
-              />
-
-              <TechCard
                 logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                title="TF-IDF"
-                badge="NLP"
-                desc="Vectorisation de texte pour classification et recherche sémantique. Intégration scikit-learn pour pipelines ML."
-                href="https://scikit-learn.org/stable/modules/feature_extraction.html"
-              />
-
-              <TechCard
-                logo={null}
-                title="Clustering"
-                badge="KMeans / DBSCAN"
-                desc="Segmentation non-supervisée, découverte de patterns. KMeans, DBSCAN, évaluation avec métriques silhouette."
-                href="https://scikit-learn.org/stable/modules/clustering.html"
-              />
-
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                title="Web Scraping"
-                badge="BeautifulSoup"
-                desc="Extraction de données web pour ETL. BeautifulSoup, Requests, Playwright pour sites JavaScript dynamiques."
+                title="BeautifulSoup"
+                badge="Parsing HTML/XML"
+                desc="Extraction intelligente de données depuis pages web. Parsing HTML/XML robuste, navigation DOM intuitive, gestion des encodages. Idéal pour scraping de contenu structuré et analyse de données web."
                 href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
               />
-            </div>
-          </section>
-
-          {/* Databases & DevOps */}
-          <section className="mb-8">
-            <SectionHeader 
-              title="Bases de données & DevOps" 
-              subtitle="Persistance, caching, conteneurisation et CI/CD"
-            />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                title="PostgreSQL"
-                badge="SQL"
-                desc="SGBD relationnel robuste. ACID, indexation avancée, fonctions window, support JSON pour hybride SQL/NoSQL."
-              />
 
               <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                title="MongoDB"
-                badge="NoSQL"
-                desc="Base documentaire flexible. Schéma dynamique, réplication, sharding horizontal pour scalabilité massive."
-              />
-
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
-                title="Redis"
-                badge="In-Memory"
-                desc="Cache ultra-rapide, pub/sub, sessions utilisateur. Structures de données avancées pour queues et leaderboards."
-              />
-
-              <TechCard
-                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                title="Docker"
-                badge="Containers"
-                desc="Conteneurisation complète, Docker Compose pour stacks multi-services. Déploiement reproductible et portable."
+                logo="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                title="Requests"
+                badge="HTTP Client"
+                desc="Bibliothèque HTTP élégante pour interactions web. Sessions persistantes, gestion authentification, cookies, headers personnalisés. Essentiel pour automatisation, APIs REST et collecte de données."
+                href="https://requests.readthedocs.io/"
               />
             </div>
           </section>

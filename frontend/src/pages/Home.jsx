@@ -5,32 +5,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Home() {
-  const sample = [
-    {
-      id: 1,
-      title: "Mines Reporting",
-      description: "Dashboard de reporting, charts et export.",
-      stack: "Django,React,Postgres",
-      image_url:
-        "https://images.unsplash.com/photo-1526378729143-99b8d3d4c7a6?q=80&w=1400&auto=format&fit=crop",
-    },
-    {
-      id: 2,
-      title: "App Mobile Sync",
-      description: "Prototype mobile avec sync offline.",
-      stack: "React Native,Django",
-      image_url:
-        "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop",
-    },
-    {
-      id: 3,
-      title: "Chat & Notifications",
-      description: "Service temps réel, Redis & WebSocket.",
-      stack: "Django,Redis,WebSocket",
-      image_url:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop",
-    },
-  ];
+
 
   return (
     <>
@@ -39,19 +14,13 @@ export default function Home() {
           {/* Texte principal */}
           <div>
             <p className="text-sm font-semibold text-blue-300 uppercase tracking-wide">
-              Développeur Full-Stack & Mobile
+              Développeur Backend Python-Django
             </p>
 
-            <h5 className="mt-4 text-4xl md:text-5xl font-extrabold leading-tight text-white">
-              Développeur fullstack, je conçois des expériences digitales{" "}
-              <span className="text-blue-400">fluides</span> et{" "}
-              <span className="text-blue-300">intelligentes</span>.
-            </h5>
-
-            <p className="mt-5 text-gray-300 max-w-lg leading-relaxed">
-              J’aide les entreprises et les particuliers à transformer leurs idées
-              en produits performants, modernes et centrés sur l’utilisateur.
-            </p>
+          <h5 className="mt-4 text-2xl md:text-3xl font-extrabold leading-snug text-white">
+            Backend Python–Django, du <span className="text-blue-400">MVT</span> au front{" "}
+            <span className="text-blue-300">Bootstrap 5</span>, je conçois des applications web performantes.
+          </h5>
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
               {/* Bouton Projets */}
@@ -135,30 +104,16 @@ export default function Home() {
             <div className="mt-5 grid grid-cols-2 gap-3">
               <div className="p-3 text-sm">
                 <div className="text-xs text-gray-400">Backend</div>
-                <div className="font-semibold text-white">Django & DRF</div>
+                <div className="font-semibold text-white">Django</div>
               </div>
               <div className="p-3 text-sm">
                 <div className="text-xs text-gray-400">Front</div>
-                <div className="font-semibold text-white">React / Vite</div>
+                <div className="font-semibold text-white">Bootstrap 5</div>
               </div>
             </div>
           </div>
         </div>
       </ThemeWrapper>
-
-      {/* Section Projets */}
-      <section className="bg-gray-950 text-gray-100 py-20 px-6">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-extrabold mb-10 text-center text-blue-400">
-            Projets récents
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sample.map((p) => (
-              <ProjectCard key={p.id} p={p} />
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

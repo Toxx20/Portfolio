@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="text-sm text-center sm:text-left">
           © {new Date().getFullYear()}{" "}
           <span className="text-white font-semibold">Toky R.</span> — Développeur
-          Full-Stack. Tous droits réservés.
+          Backend. Tous droits réservés.
         </div>
 
         {/* Liens sociaux */}
