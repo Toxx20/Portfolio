@@ -1,6 +1,8 @@
 // src/pages/Projects.jsx
 import React from "react";
 import ThemeWrapper from "../components/ThemeWrapper";
+import MitadyA from "../assets/MitadyA.png";
+import WuTangClanLogo from "../assets/WuTangClanLogo.png";
 
 const TechBadge = ({ logo, name }) => (
   <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-800/60 border border-white/10 rounded-lg hover:border-blue-400/30 transition-all duration-300">
@@ -100,7 +102,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Blog_Mafia",
-      coverImage: "/src/assets/WuTangClanLogo.png",
+      coverImage: "WuTangClanLogo",
       technologies: [
         {
           logo: "https://www.svgrepo.com/show/353657/django-icon.svg",
@@ -121,7 +123,7 @@ export default function Projects() {
     },
     {
       title: "Mitady Asa",
-      coverImage: "/src/assets/MitadyA.png", 
+      coverImage: MitadyA, 
       technologies: [
         {
           logo: "https://www.svgrepo.com/show/353657/django-icon.svg",
