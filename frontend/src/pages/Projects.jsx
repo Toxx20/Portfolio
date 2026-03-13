@@ -102,7 +102,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Blog_Mafia",
-      coverImage: "WuTangClanLogo",
+      coverImage: WuTangClanLogo,
       technologies: [
         {
           logo: "https://www.svgrepo.com/show/353657/django-icon.svg",
