@@ -8,8 +8,8 @@ export default function Footer() {
         {/* Texte de gauche */}
         <div className="text-sm text-center sm:text-left">
           © {new Date().getFullYear()}{" "}
-          <span className="text-white font-semibold">Toky R.</span> — Développeur
-          Backend. Tous droits réservés.
+          <span className="text-white font-semibold">Toky R.</span> — Développeur Full Stack
+          . Tous droits réservés.
         </div>
 
         {/* Liens sociaux */}
@@ -22,16 +22,6 @@ export default function Footer() {
             className="p-2 rounded-lg hover:bg-white/10 text-white transition"
           >
             <Github size={20} />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/noely-rakotoharinosy-7b6146317/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="p-2 rounded-lg hover:bg-white/10 text-white transition"
-          >
-            <Linkedin size={20} />
           </a>
 
           <a

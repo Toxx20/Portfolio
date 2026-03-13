@@ -14,12 +14,12 @@ export default function Home() {
           {/* Texte principal */}
           <div>
             <p className="text-sm font-semibold text-blue-300 uppercase tracking-wide">
-              Développeur Backend Python-Django
+              Développeur Full Stack Web
             </p>
 
           <h5 className="mt-4 text-2xl md:text-3xl font-extrabold leading-snug text-white">
-            Backend Python–Django, du <span className="text-blue-400">MVT</span> au front{" "}
-            <span className="text-blue-300">Bootstrap 5</span>, je conçois des applications web performantes.
+            Passionné par l'écosystème <span className="text-blue-400">Django</span>,je conçois vos projets avec des <span className="text-blue-400">API REST </span>
+            scalables et des interfaces dynamiques sous <span className="text-blue-300">React</span>.
           </h5>
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
@@ -104,11 +104,11 @@ export default function Home() {
             <div className="mt-5 grid grid-cols-2 gap-3">
               <div className="p-3 text-sm">
                 <div className="text-xs text-gray-400">Backend</div>
-                <div className="font-semibold text-white">Django</div>
+                <div className="font-semibold text-white">Django Rest Framework</div>
               </div>
               <div className="p-3 text-sm">
                 <div className="text-xs text-gray-400">Front</div>
-                <div className="font-semibold text-white">Bootstrap 5</div>
+                <div className="font-semibold text-white">Réact.js + Vite</div>
               </div>
             </div>
           </div>

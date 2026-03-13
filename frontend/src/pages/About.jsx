@@ -117,7 +117,17 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-10 items-start">
 
               {/* --- COLONNE GAUCHE : ÉDUCATION --- */}
+                
+
               <div className="space-y-6">
+
+                <div className="bg-gray-800/50 p-6 rounded-2xl">
+                  <h4 className="font-semibold text-white">SaC.Inc (Canada)</h4>
+                  <div className="text-gray-300 text-sm mt-2">
+                    Gestion de Projet-Certifié (2026)
+                  </div>
+                </div>
+
                 <div className="bg-gray-800/50 p-6 rounded-2xl">
                   <h4 className="font-semibold text-white">ESMIA (Mahamasina)</h4>
                   <div className="text-gray-300 text-sm mt-2">
