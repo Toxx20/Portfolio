@@ -173,15 +173,6 @@ export default function Specialisation() {
                 badge="Utility-first"
                 desc="Design system moderne avec classes utilitaires. Développement rapide, responsive design, dark mode natif. Personnalisation complète avec configuration Tailwind."
                 href="https://tailwindcss.com/"
-                isLearning={true}
-              />
-
-              <TechCard
-                logo="https://img.daisyui.com/images/daisyui-logo/daisyui-logomark.svg"
-                title="DaisyUI"
-                badge="Tailwind Components"
-                desc="Bibliothèque de composants pour Tailwind CSS. Boutons, cards, modals, forms pré-stylés. Thèmes personnalisables, accessibilité intégrée, gain de productivité."
-                href="https://daisyui.com/"
                 isLearning={false}
               />
 
@@ -218,7 +209,7 @@ export default function Specialisation() {
                 badge="SQL Avancé"
                 desc="SGBD relationnel robuste et performant. Support JSON, fonctions window, indexation GiST/GIN. Idéal pour applications complexes avec Django."
                 href="https://www.postgresql.org/"
-                isLearning={true}
+                isLearning={false}
               />
 
               <TechCard
@@ -291,6 +282,7 @@ export default function Specialisation() {
                 badge="Version Control"
                 desc="Gestion de versions avec Git. Branches, merge, rebase, pull requests. Collaboration en équipe, workflows Git Flow. Code review et CI/CD avec GitHub Actions."
                 href="https://git-scm.com/"
+                isLearning={true}
               />
             </div>
           </section>

@@ -3,6 +3,7 @@ import React from "react";
 import ThemeWrapper from "../components/ThemeWrapper";
 import MitadyA from "../assets/MitadyA.png";
 import WuTangClanLogo from "../assets/WuTangClanLogo.png";
+import Dentiste from "../assets/dentiste.png";
 
 const TechBadge = ({ logo, name }) => (
   <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-800/60 border border-white/10 rounded-lg hover:border-blue-400/30 transition-all duration-300">
@@ -122,7 +123,7 @@ export default function Projects() {
       docUrl: "/path/to/documentation.pdf" 
     },
     {
-      title: "Mitady Asa",
+      title: "Insertion-Pro",
       coverImage: MitadyA, 
       technologies: [
         {
@@ -134,20 +135,34 @@ export default function Projects() {
           name: "MySQL"
         },
         {
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-          name: "Bootstrap 5"
+          logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+          name: "Réact"
         },
-        {
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-          name: "BeautifulSoup4"
-        },
-        {
-          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-          name: "Requests"
-        }
       ],
-      githubUrl: "https://github.com/Toxx20/MitadyAsa",
-      videoUrl: "#",  
+      githubUrl: "https://github.com/Toxx20/InsertionPro",
+    },
+    {
+      title: "Fullstack-Rdv",
+      coverImage: Dentiste, 
+      technologies: [
+        {
+          logo: "https://www.svgrepo.com/show/353657/django-icon.svg",
+          name: "Django"
+        },
+        {
+          logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+          name: "Réact"
+        },
+        {
+          logo: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+          name: "Psql"
+        },
+        {
+          logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+          name: "tailwind css"
+        },
+      ],
+      githubUrl: "https://github.com/Toxx20/fullstack-dentiste",
     }
   ];
 

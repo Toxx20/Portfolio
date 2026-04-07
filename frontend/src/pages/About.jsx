@@ -10,37 +10,51 @@ export default function About() {
 
   const experiences = [
     {
-      title: "Projet d’insertion professionnelle — Plateforme d’aide à l’emploi",
+      title: "Fullstack Rdv — Projet personnel",
+      period: "Fév 2026 — Avril 2026",
+      bullets: [
+        "Gestion des permissions et rôles avec des fonctionnalités complètes",
+        "Design responsive et moderne",
+        "Projet fullstack avec Django Rest Framework + Api Rest + Réact.js + Tailwind css",
+        "https://github.com/Toxx20/fullstack-dentiste",
+      ],
+    },
+    {
+      title: "Blog Mafia — Projet personnel",
+      period: "Déc 2025 — Janv 2026",
+      bullets: [
+        "Gestion des permissions et rôles avec des fonctionnalités complètes",
+        "Projet déjà en production par PythonAnywhere",
+        "Fait par Django + Bootstrap 5",
+        "https://github.com/Toxx20/blog_mafia",
+        "url: https://toky.pythonanywhere.com/"
+      ],
+    },
+    {
+      title: "Plateforme d'insertion professionnelle — Projet académique",
       period: "Avr 2025 — Août 2025",
       bullets: [
-        "Développement d’une plateforme web d’aide à l’emploi.",
-        "Mise en place d’un data warehouse pour l’analyse du marché.",
-        "Intégration d’une IA pour le matching compétences/offres.",
+        "Gestion des permissions et rôles",
+        "Plateforme fullstack avec Django Rest Framework + Api Rest + Réact.js",
+        "https://github.com/Toxx20/InsertionPro",
       ],
     },
     {
-      title: "Ministère des Mines (Ampasapito) — Système de reporting",
-      period: "Nov 2024 — Mar 2025",
+      title: "Email clone avec de l'I.A — Projet personnel",
+      period: "Fév 2024 — Juin 2024",
       bullets: [
-        "Système de reporting et tableau de bord interactif.",
-        "Intégration d’un Data Warehouse pour l’analyse consolidée.",
-        "Sécurisation (auth JWT, protections CSRF/XSS).",
-      ],
-    },
-    {
-      title: "Cabinet Dentaire Gendarmerie CIRGN (Mahamasina) — Gestion RDV",
-      period: "Avr 2024 — Août 2024",
-      bullets: [
-        "Système intelligent de gestion des rendez-vous (+50% efficacité).",
-        "Modèle prédictif pour optimiser la planification.",
+        "Detection d'un message envoyé si c'est un email ou spam",
+        "Mise en œuvre du traitement de texte (TF-IDF) avec Django et Bootstrap 5",
+        "https://github.com/Toxx20/messagerie-ai",
       ],
     },
     {
       title: "Centre de Fusion Informations Maritimes CFIM (Ankaditoho) — Gestion RH",
       period: "Mars 2023 — Juil 2023",
       bullets: [
-        "Gestion des permissions et rôles.",
+        "Gestion des permissions et rôles",
         "Automatisation des calculs de congés (gain de 60%).",
+        "Fait par Django + Bootstrap 4",
       ],
     },
   ];
