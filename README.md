@@ -5,4 +5,4 @@ Site qui représente la globalité de mes compétences et mes projets.
 
 
 # Architecture du projet
-
+![image Structure mon portfolio](./public/capture_diagramme.png)
