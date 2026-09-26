@@ -1,0 +1,11 @@
+.skills-icon{
+    @apply  flex gap-1.5 flex-wrap lg:gap-10;
+}
+
+.card-project{
+    @apply grid grid-cols-[repeat(auto-fill,90%)] justify-center gap-2 lg:grid-cols-[repeat(auto-fill,45%)];
+}
+
+.footer-flex{
+    @apply flex flex-col gap-2.5;
+}

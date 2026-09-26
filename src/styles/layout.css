@@ -1,0 +1,4 @@
+
+.layout{
+    @apply flex flex-col gap-5 py-2.5 px-[5%];
+}

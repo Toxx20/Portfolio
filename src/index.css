@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "./styles/reset.css" layer(base);
+@import "./styles/layout.css" layer(base);
+@import "./styles/components.css" layer(base);
+
+@theme{
+  --color-purple: #513EBC;
+  --color-white: #FFFFFF;
+  --color-black: #111015;
+  --color-green: #38B000;
+  --color-blue: #219EBC;
+  --color-dark-navbar: #22202A;
+  --color-theme: #181721;
+  --font-Roboto : "Roboto", sans-serif;
+  --font-IBM: "IBM Plex Mono", monospace;
+
+}
