@@ -1,5 +1,5 @@
 export function Download(){
-    return  <button className="bg-black py-2  font-Roboto font-bold flex justify-center w-[50%] rounded-xl lg:w-[20%]"
+    return  <button className="bg-black py-2  font-Roboto font-bold flex justify-center w-[50%] rounded-xl cursor-pointer lg:w-[10%]"
                 onClick={()=>{
                     const link = document.createElement("a");
                     link.href = "/CV_Toky_RAKOTOHARINOSY.pdf";
