@@ -1,5 +1,5 @@
 export function Accueil(){
-    return <div  id="Accueil" className="layout lg:h-dvh lg:flex-row justify-between items-center">
+    return <div  id="Accueil" className="layout lg:h-dvh md:flex-row justify-between items-center">
                 <div className="flex flex-col gap-5 lg:w-1/2">
                     <h1>
                         Moi c’est {""}
@@ -19,7 +19,7 @@ export function Accueil(){
                     architecture compréhensible  
                     pour une équipe.
                 </div>
-                <img className="rounded-3xl lg:rounded-xl lg:h-auto lg:w-1/3" src="/Toky Portfolio.jpg"
+                <img className="rounded-3xl lg:rounded-xl lg:h-auto md:w-1/2 lg:w-1/3" src="/Toky Portfolio.jpg"
                 alt="image d'un développeur web" />
             </div>
 }
