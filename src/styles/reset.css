@@ -1,5 +1,5 @@
 body{
-    @apply  text-[16px] font-Roboto box-border text-black;
+    @apply bg-white text-[16px] font-Roboto box-border text-black dark:bg-black;
 }
 
 select{
@@ -24,5 +24,5 @@ h4{
 }
 
 header{
-    @apply mt-1.5 mx-[5%] rounded-3xl flex justify-between items-center p-2 bg-purple md:p-5;
+    @apply mt-1.5 mx-[5%] rounded-3xl flex justify-between items-center p-2 bg-purple md:p-3 dark:bg-dark-navbar;
 }

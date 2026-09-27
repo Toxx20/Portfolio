@@ -19,7 +19,7 @@ export function Project (){
                     ]
     
 
-    return <div id="Projet" className="layout bg-purple lg:h-[80dvh]">
+    return <div id="Projet" className="layout bg-purple md:h-[75dvh] dark:bg-dark-theme">
         <h1 className="text-white">Projets</h1>
         <div className="card-project">
             {/* <Card  name, github, vercel, image, alt></Card> */}

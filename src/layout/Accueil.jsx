@@ -1,5 +1,5 @@
 export function Accueil(){
-    return <div  id="Accueil" className="layout lg:h-dvh md:flex-row justify-between items-center">
+    return <div  id="Accueil" className="layout md:flex-row justify-between items-center dark:text-white">
                 <div className="flex flex-col gap-5 lg:w-1/2">
                     <h1>
                         Moi c’est {""}

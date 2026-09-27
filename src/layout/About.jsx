@@ -1,7 +1,7 @@
 import { Download } from "../components/ButtonDownload.jsx";
 
 export function About(){
-    return <div id="About" className="layout bg-purple text-white lg:h-dvh">
+    return <div id="About" className="layout bg-purple text-white md:h-[75dvh] dark:bg-dark-theme">
         <h1 >A propos</h1>
         <div className="flex flex-col gap-1.5">
             <h2>Qui suis-je?</h2>

@@ -1,5 +1,5 @@
 export function Card({name,github,vercel,image,alt}){
-    return  <div className="bg-white rounded-2xl px-1.5 py-3">
+    return  <div className="bg-white rounded-2xl px-1.5 py-3 dark:bg-purple dark:text-white">
                 <div className="flex justify-between items-center ">
                     <h1>{name} </h1>
                     <div className="flex gap-2.5">
@@ -30,8 +30,7 @@ export function Card({name,github,vercel,image,alt}){
                         </svg>
                     </a>
                 </div>
-
-                </div>
+            </div>
                 <img className="rounded-xl w-full h-[85%] object-cover" src={image} alt={alt} />
             </div>
 }

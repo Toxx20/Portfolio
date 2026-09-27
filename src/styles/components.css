@@ -3,7 +3,7 @@
 }
 
 .card-project{
-    @apply grid grid-cols-[repeat(auto-fill,90%)] justify-center gap-2 md:grid-cols-[repeat(auto-fill,30%)];
+    @apply grid grid-cols-[repeat(auto-fill,90%)] gap-1.5 justify-center md:grid-cols-[repeat(auto-fill,30%)];
 }
 
 

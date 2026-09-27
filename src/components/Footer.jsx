@@ -1,9 +1,9 @@
 import { Navigation } from "./Navigation.jsx"
 
 export function Footer(){
-    return <footer className="flex justify-between p-[5%]">
+    return <footer className="flex justify-between p-2.5">
         <div className="footer-flex">
-            <h3>Contact</h3>
+            <h3 className="dark:text-white">Contact</h3>
             {/* label téléphone */}
             <div className="flex gap-1 bg-purple p-1 text-white justify-center items-center rounded-lg text-[10px] md:text-xs">
                 {/* logo téléphone */}
@@ -35,12 +35,12 @@ export function Footer(){
                 rakotoharinosynoely@gmail.com
             </div>
         </div>
-        <div className="footer-flex items-center">
-            <h3> Navigations</h3>
+        <div className="footer-flex items-center dark:text-white">
+            <h3 className=""> Navigations</h3>
             <Navigation classNameText={'text-xs'} > </Navigation>
         </div>
-        <div className="footer-flex">
-            <h3 className="text-right">Suivez-moi !</h3>
+        <div className="footer-flex ">
+            <h3 className="text-right dark:text-white">Suivez-moi !</h3>
             <div className=" flex gap-1.5 justify-center">
                 {/* tik tok */}
                 <a href="https://www.tiktok.com/@18.toky"
