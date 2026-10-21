@@ -36,8 +36,6 @@ function Theme(){
         localStorage.setItem('theme','dark')
     }
 
-    console.log(localStorage.getItem('theme'))
-
     function goLight(){
         setTheme('light')
         localStorage.setItem('theme','light')

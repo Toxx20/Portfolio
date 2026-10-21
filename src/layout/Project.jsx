@@ -10,16 +10,23 @@ export function Project (){
                             alt : "image d'une aplication Todo"
                         },
                         {
-                            name : "Horoscopiko",
-                            github : "https://github.com/Toxx20/Horoscopiko",
-                            vercel : "https://horoscopiko.vercel.app/",
-                            image : "/horoscope.jpg",
+                            name : "FlowPay",
+                            github : "https://github.com/Toxx20/FlowPay",
+                            vercel : "https://flow-pay-chi.vercel.app/",
+                            image : "/flowpay.jpg",
                             alt : "image de l'horocope"
                         },
+                        {
+                            name:"PizzaMiavaka",
+                            github:"https://github.com/Toxx20/Pizza",
+                            vercel:"https://pizza-miavaka.vercel.app/",
+                            image:"/fondPizza.jpg",
+                            alt:"image pizza"
+                        }
                     ]
     
 
-    return <div id="Projet" className="layout bg-purple md:h-[75dvh] dark:bg-dark-theme">
+    return <div id="Projet" className="layout bg-purple dark:bg-dark-theme lg:h-[70vh]">
         <h1 className="text-white">Projets</h1>
         <div className="card-project">
             {/* <Card  name, github, vercel, image, alt></Card> */}

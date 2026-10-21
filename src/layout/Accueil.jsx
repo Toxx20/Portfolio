@@ -6,9 +6,9 @@ export function Accueil(){
                             <span className="text-purple">
                                 Toky
                             </span>
-                        , Développeur REACT
+                        , Développeur REACT | NEXTJS
                     </h1>
-                    9 mois d'expérience, 
+                    Plusieurs mois d'expérience 
                     dans la conception des sites web
                     modernes en approche Mobile First
                     et responsive.  

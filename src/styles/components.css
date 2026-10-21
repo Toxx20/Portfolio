@@ -3,10 +3,13 @@
 }
 
 .card-project{
-    @apply grid grid-cols-[repeat(auto-fill,90%)] gap-1.5 justify-center md:grid-cols-[repeat(auto-fill,30%)];
+    @apply grid gap-2 grid-cols-[repeat(auto-fill,260px)] justify-center;
 }
 
+.footer-icon{
+    @apply p-2 bg-purple rounded-full text-white flex justify-center items-center;
+}
 
 .footer-flex{
-    @apply flex flex-col gap-2.5;
+    @apply flex flex-col items-center gap-2.5;
 }
